@@ -24,6 +24,41 @@ int main() {
         matriz[i][9 - i] = 3; // Linha i, coluna decrescendo de 9 para 7
     }
 
+
+     //cone
+     for (int j = 0; j <= 4; j++) {  
+        matriz[9][j] = 5;
+    }
+
+    for (int j = 1; j <= 3; j++) {  
+        matriz[8][j] = 5;
+    }
+
+    matriz[7][2] = 5; 
+
+
+    //cruz
+    matriz[4][3] = 5;
+
+    for (int j = 1; j <= 5; j++)
+    {
+        matriz[5][j] = 5;
+    }
+    
+    matriz[6][3] = 5;
+
+
+    //octaedro
+    matriz[7][8] = 5;
+
+    for (int j = 7; j <= 9; j++)
+    {
+        matriz[8][j] = 5;
+    }
+    
+    matriz[9][8] = 5;
+
+
     // Exibe cabeçalho das colunas
     printf("   ");
     for (char c = 'A'; c <= 'J'; c++) {
