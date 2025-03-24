@@ -47,6 +47,18 @@ int main() {
     
     matriz[6][3] = 5;
 
+
+    //octaedro
+    matriz[7][8] = 5;
+
+    for (int j = 7; j <= 9; j++)
+    {
+        matriz[8][j] = 5;
+    }
+    
+    matriz[9][8] = 5;
+
+
     // Exibe cabeçalho das colunas
     printf("   ");
     for (char c = 'A'; c <= 'J'; c++) {
